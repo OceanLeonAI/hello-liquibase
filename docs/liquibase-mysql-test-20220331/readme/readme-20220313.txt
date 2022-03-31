@@ -1,0 +1,6 @@
+一.generateChangeLog refer: https://docs.liquibase.com/concepts/connections/creating-config-properties.html
+1.以mysql为例，对已有数据库，导出对应表结构changelog
+liquibase --changeLogFile=20220331-exist-data-structure.mysql.sql generateChangeLog
+
+2.以mysql为例，对已有数据库，导出对应表数据changelog,注意配置
+liquibase --changeLogFile=20220331-exist-data.mysql.sql --diffTypes=data generateChangeLog

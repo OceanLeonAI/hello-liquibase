@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd ">
+
+	<!-- 这可以包含你需要执行的 changelog -->
+	<include file="changelogs/1-changelog.sql"/>
+	
+	<include file="changelogs/2-changelog.sql"/>
+	
+
+	
+	<!--
+	
+	<include file="changelogs/1-changelog.sql"/>
+	
+	<include file="changelogs/2-changelog.sql"/>
+	
+	<include file="changelogs/3-changelog.sql"/>
+	
+	<include file="changelogs/4-changelog.sql"/>
+	
+	-->
+
+</databaseChangeLog>
