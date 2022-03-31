@@ -8,3 +8,9 @@ INSERT INTO test_table666 VALUES(1001,'hello world');
 
 -- changeset liquibase:3
 delete from test_table666 where test_id = 1001;
+
+-- changeset liquibase:4
+INSERT INTO test_table666 VALUES(1002,'hello world');
+
+-- changeset liquibase:5
+delete from test_table666 where test_id = 1002;

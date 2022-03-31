@@ -26,16 +26,18 @@
             <plugin>
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-maven-plugin</artifactId>
-                <version>4.2.0</version>
+                <version>4.3.5</version>
                 <configuration>
                     <!--set values for Liquibase properties and settings
                     for example, the location of a properties file to use-->
                     <!--<propertyFile>liquibase.properties</propertyFile>-->
                     <changeLogFile>changelog.sql</changeLogFile>
-                    <url>jdbc:mysql://localhost:3306/leon?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT
-                    </url>
+                    <driver>com.mysql.cj.jdbc.Driver</driver>
+                    <url>jdbc:mysql://localhost:3306/liquibase?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</url>
                     <username>root</username>
                     <password>root</password>
+                    <outputChangeLogFile>outputChangeLogFile.mysql.sql</outputChangeLogFile>
+                    <logging>DEBUG</logging>
                 </configuration>
             </plugin>
         </plugins>
